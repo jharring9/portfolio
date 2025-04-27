@@ -51,7 +51,7 @@ export default function Projects() {
                 <div className="relative">
                   <div className="aspect-video overflow-hidden">
                     <img
-                      src={project.image || "/placeholder.svg"}
+                      src={project.image}
                       alt={project.title}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                     />

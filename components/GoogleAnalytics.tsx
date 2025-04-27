@@ -3,7 +3,12 @@
 import Script from 'next/script';
 
 export default function GoogleAnalytics() {
-  const GA_MEASUREMENT_ID = "G-GH3RJH0JC9";
+  const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
+
+  if (!GA_MEASUREMENT_ID) {
+    console.warn('Google Analytics Measurement ID is not set');
+    return null;
+  }
 
   return (
     <>

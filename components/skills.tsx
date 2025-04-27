@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import {Database, Layout, Server, Smartphone, Braces, GitBranch, Cloud, Cloudy} from "lucide-react"
+import {Database, Layout, Server, Braces, GitBranch, Cloudy} from "lucide-react"
 
 export default function Skills() {
   const skillCategories = [

@@ -99,7 +99,7 @@ export default function Experience() {
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 p-2 rounded-md bg-background/60 border border-border/50">
                         <img
-                          src={experience.logo || "/placeholder.svg"}
+                          src={experience.logo}
                           alt={`${experience.company} logo`}
                           className="w-12 h-12 object-contain"
                         />
