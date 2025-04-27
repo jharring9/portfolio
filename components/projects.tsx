@@ -25,7 +25,7 @@ export default function Projects() {
       description: "This website! Designed as an elegant showcase of my background, experience, and skillset.",
       image: "https://wagerwire-webassets.s3.amazonaws.com/portfolio-home.png?height=300&width=600",
       liveUrl: "https://jack-harrington.com/",
-      githubUrl: "https://github.com/jharring9",
+      githubUrl: "https://github.com/jharring9/portfolio",
     },
   ]
 
