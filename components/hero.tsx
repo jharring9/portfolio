@@ -30,7 +30,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="home" className="relative py-8 md:py-32 overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
           <div className="flex flex-col justify-center space-y-4">
@@ -43,8 +43,8 @@ export default function Hero() {
                 Hi, I'm <span className="gradient-text font-extrabold">Jack Harrington</span>
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Focused on clean architecture and reliability, I build <span className="text-accent">robust</span> and <span
-                  className="text-primary">performant</span> systems that power digital experiences at scale.
+                I design, build, and maintain <span className="text-primary">robust</span> and <span
+                  className="text-accent">performant</span> systems that power digital experiences at scale.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

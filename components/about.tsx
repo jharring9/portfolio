@@ -58,23 +58,23 @@ export default function About() {
             </Card>
           </div>
           <div className="mx-auto max-w-3xl space-y-4">
-            <h3 className="text-xl font-bold">When I'm Not Coding</h3>
+            <h3 className="text-xl font-bold">When I'm Not Building</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="flex flex-col items-center p-4 rounded-lg bg-background/40 backdrop-blur-md">
                 <Plane className="h-8 w-8 mb-2 text-primary" />
-                <span className="text-sm">Flying a Plane</span>
+                <span className="text-sm">Pilot</span>
               </div>
               <div className="flex flex-col items-center p-4 rounded-lg bg-background/40 backdrop-blur-md">
                 <Music className="h-8 w-8 mb-2 text-primary" />
-                <span className="text-sm">Listening to Music</span>
+                <span className="text-sm">Music Enthusiast</span>
               </div>
               <div className="flex flex-col items-center p-4 rounded-lg bg-background/40 backdrop-blur-md">
                 <MapPinned className="h-8 w-8 mb-2 text-primary" />
-                <span className="text-sm">Traveling</span>
+                <span className="text-sm">Traveler</span>
               </div>
               <div className="flex flex-col items-center p-4 rounded-lg bg-background/40 backdrop-blur-md">
                 <LandPlot className="h-8 w-8 mb-2 text-primary" />
-                <span className="text-sm">Golfing</span>
+                <span className="text-sm">Golfer</span>
               </div>
             </div>
           </div>
