@@ -14,8 +14,9 @@ export default function Experience() {
           period: "Jan 2024 - Present",
           type: "Full-time",
           description:
-            "I engineer and optimize distributed ad-serving infrastructure at Amazon Ads, delivering low-latency, extremely high-throughput performance at global scale.\n\n" +
-              "I led architecture and development of an agentic AI deal monitoring platform leveraging retrieval-augmented generation (RAG) for real-time diagnostics, integrated Amazon Music into Amazon’s supply-side ad platform, and drove $2M+ annual cost savings through strategic service and infrastructure optimization.",
+            "I design and optimize distributed ad-serving infrastructure and software components at Amazon Ads - delivering low-latency, extremely high-throughput performance at global scale.\n\n" +
+              "I led architecture and development of an agentic AI deal monitoring platform leveraging retrieval-augmented generation (RAG) for real-time diagnostics, integrated Amazon Music into Amazon's supply-side ad platform, and drove $2M+ annual cost savings through strategic service and infrastructure optimization.\n\n" +
+              "I have mentored several interns and new hires, frequently lead cross-team design reviews, and contribute to the team's technical roadmap."
         },
         {
           title: "Software Development Engineer Intern",
@@ -29,7 +30,10 @@ export default function Experience() {
       ],
       location: "Arlington, VA (Amazon HQ2)",
       skills: ["DynamoDB", "Lambda", "OpenSearch", "Bedrock", "Spark/Hadoop"],
-      color: "primary",
+      gradientClass: "from-primary to-primary/60",
+      colorClass: "text-primary",
+      borderClass: "border-primary/20 hover:border-primary/30",
+      shadowClass: "hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)]",
     },
     {
       company: "CoStar Group",
@@ -47,10 +51,13 @@ export default function Experience() {
       ],
       location: "Washington, DC",
       skills: ["C#", "AWS SQS", "DataDog", "RabbitMQ", "SQL Server"],
-      color: "accent",
+      gradientClass: "from-accent to-accent/60",
+      colorClass: "text-accent",
+      borderClass: "border-accent/20 hover:border-accent/30",
+      shadowClass: "hover:shadow-[0_0_30px_rgba(var(--accent-rgb),0.2)]",
     },
     {
-      company: "BNY Mellon",
+      company: "BNY",
       logo: "/bnymellon.svg?height=60&width=60",
       positions: [
         {
@@ -65,7 +72,10 @@ export default function Experience() {
       ],
       location: "New York, NY",
       skills: ["Java", "SQL", "PowerBI"],
-      color: "blue-500",
+      gradientClass: "from-blue-500 to-blue-500/60",
+      colorClass: "text-blue-500",
+      borderClass: "border-blue-500/20 hover:border-blue-500/30",
+      shadowClass: "hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]",
     },
   ]
 
@@ -89,11 +99,11 @@ export default function Experience() {
             {experiences.map((experience, index) => (
               <Card
                 key={index}
-                className={`overflow-hidden bg-background/40 backdrop-blur-md border-${experience.color}/20 hover:border-${experience.color}/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(var(--${experience.color}-rgb),0.2)]`}
+                className={`overflow-hidden bg-background/40 backdrop-blur-md ${experience.borderClass} transition-all duration-300 ${experience.shadowClass}`}
               >
                 <CardContent className="p-0">
                   <div
-                    className={`h-2 w-full bg-gradient-to-r from-${experience.color} to-${experience.color}/60`}
+                    className={`h-2 w-full bg-gradient-to-r ${experience.gradientClass}`}
                   ></div>
                   <div className="p-6">
                     <div className="flex items-start gap-4">
@@ -105,7 +115,7 @@ export default function Experience() {
                         />
                       </div>
                       <div className="flex-grow">
-                        <h3 className={`text-2xl font-bold text-${experience.color} text-left`}>
+                        <h3 className={`text-2xl font-bold ${experience.colorClass} text-left`}>
                           {experience.company}
                         </h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
@@ -118,7 +128,7 @@ export default function Experience() {
                           <Badge
                             key={skillIndex}
                             variant="secondary"
-                            className={`bg-${experience.color}/10 text-${experience.color} hover:bg-${experience.color}/20`}
+                            className={`bg-${experience.colorClass}/10 text-${experience.colorClass} hover:bg-${experience.colorClass}/20`}
                           >
                             {skill}
                           </Badge>
