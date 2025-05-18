@@ -10,7 +10,7 @@ export default function Projects() {
       description:
         "Weekly NFL fantasy betting platform built on AWS Lambda, supporting configurable groups, live odds updates, and automated scoring.",
       image: "https://wagerwire-webassets.s3.amazonaws.com/home-image.png?height=300&width=600",
-      liveUrl: "#",
+      liveUrl: "https://iy0vomoeee.execute-api.us-east-1.amazonaws.com/",
       githubUrl: "https://github.com/jharring9/wager-wire",
     },
     {
